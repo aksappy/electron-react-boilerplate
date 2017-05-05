@@ -4,7 +4,8 @@ import { AppContainer } from 'react-hot-loader';
 import Root from './containers/Root';
 import { configureStore, history } from './store/configureStore';
 import './app.global.css';
-
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
 const store = configureStore();
 
 render(
